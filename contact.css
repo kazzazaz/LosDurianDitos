@@ -1,0 +1,152 @@
+body {
+  background-color: #ddf4b4;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 600px;
+  font-family: "Winky Rough", sans-serif;
+  padding: 30px;
+  background-color: #ddf4b4;
+}
+
+.contact {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.input-container, .textarea-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.icon {
+  padding-top: 10px;
+}
+
+.fa-user,
+.fa-map-marker-alt,
+.fa-envelope-open,
+.fa-comment {
+  font-size: 20px;
+}
+
+.form-input, .form-textarea {
+  position: relative;
+  width: 100%;
+}
+
+.form-input input,
+.form-textarea textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+.textarea {
+  background-color: transparent;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-label {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  pointer-events: none;
+  transition: 0.2s;
+  color: #555;
+}
+
+.input-item:focus + .form-label,
+.input-item:not(:placeholder-shown) + .form-label,
+.textarea:focus + .form-label,
+.textarea:not(:placeholder-shown) + .form-label {
+  top: -10px;
+  font-size: 12px;
+  color: #888;
+}
+
+.submit {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #264653;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.411);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.modal h3 {
+  margin: 0;
+  font-size: 24px;
+     font-family: "Winky Rough", sans-serif;
+}
+
+
+.modal p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.navv{
+     font-family: "Winky Rough", sans-serif;
+     color:black
+}

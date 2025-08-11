@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Order</title>
+  <link rel="stylesheet" href="online.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Modal -->
+  <div class="modal-container">
+    <div class="modal">
+      <img src="image-removebg-preview (21).png" alt="Success Image" />
+      <h3>Order Sent</h3>
+      <p>Thank you for your order!</p>
+      <a href="main.html" class="navv">Return</a>
+    </div>
+  </div>
+
+  <!-- Order Form -->
+  <div class="contact-container">
+    <div class="contact">
+      <h1>Order Online</h1>
+      <p>Please fill in your order details below</p>
+      <h4>Your Order Info</h4>
+
+      <form autocomplete="off">
+        <div class="form-container">
+          <div class="input-container">
+            <div class="icon"><i class="fas fa-user"></i></div>
+            <div class="form-input">
+              <input class="input-item" type="text" id="name" placeholder=" " required />
+              <label for="name" class="form-label">Name</label>
+            </div>
+          </div>
+
+          <div class="input-container">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="form-input">
+              <input class="input-item" type="text" id="address" placeholder=" " required />
+              <label for="address" class="form-label">Address</label>
+            </div>
+          </div>
+
+          <div class="input-container">
+            <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+            <div class="form-input">
+              <input class="input-item" type="text" id="items" placeholder=" " required />
+              <label for="items" class="form-label">What are you buying?</label>
+            </div>
+          </div>
+
+          <div class="input-container">
+            <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+            <div class="form-input">
+              <input class="input-item" type="text" id="payment" placeholder=" " required />
+              <label for="payment" class="form-label">Payment Method</label>
+            </div>
+          </div>
+
+          <div class="textarea-container">
+            <div class="icon"><i class="fas fa-comment"></i></div>
+            <div class="form-textarea">
+              <textarea class="textarea" id="notes" placeholder=" "></textarea>
+              <label for="notes" class="form-label">Additional Notes</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="online.js"></script>
+</body>
+</html>
